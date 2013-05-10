@@ -5,16 +5,16 @@ import java.util.Scanner;
 /**
  * @author Jeong
  * @since 2013.05.10
- * »ç°¢Çü±×¸®±â1
+ * ì‚¬ê°í˜•ê·¸ë¦¬ê¸°1
  */
 public class Example1856 implements Example{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("³ôÀÌ : ");
+		System.out.print("ë†’ì´ : ");
 		int height = sc.nextInt();
 		System.out.println(height);
-		System.out.print("³ĞÀÌ : ");
+		System.out.print("ë„“ì´ : ");
 		int width = sc.nextInt();
 		System.out.println(width);
 		
