@@ -1,12 +1,16 @@
-package jungol.exam;
+package jungol.exam.level2;
 
 import java.util.Scanner;
 
 /**
+ * 삼각형그리기1
  * @author Jeong
- * 사격형그리기2
+ * @since 2013.05.10
+ * @see link http://www.jungol.co.kr/prog/Hanal/hanalView.php?qs_code=1523&qlevel=4&sk=&sv=&menu=&qc=41&sst=qs_code&sod=asc&page=1
  */
-public class Example2046 {
+public class Example1523 {
+	public static final String SYMBOL = "*";
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -15,13 +19,14 @@ public class Example2046 {
 		System.out.println("m :");
 		int m = sc.nextInt();
 		
+		
 		if(m >= 1 && m <= 3){
 			switch (m) {
 			case 1:
 				for(int i = 0; i < n; i++){
 					for(int j = 0; j < n; j++){
-						System.out.print(i+1);
-						System.out.print(" ");
+						if(i>=j)
+							System.out.print(SYMBOL);
 					}
 					System.out.println();
 				}
@@ -30,17 +35,9 @@ public class Example2046 {
 				
 			case 2:
 				for(int i = 0; i < n; i++){
-					
-					if(i%2==0){
-						for(int j = 0; j < n; j++){
-							System.out.print(j+1);
-							System.out.print(" ");
-						}
-					}else{
-						for(int j = n; j > 0; j--){
-							System.out.print(j);
-							System.out.print(" ");
-						}
+					for(int j = 0; j < n; j++){
+						if(i<=j)
+							System.out.print(SYMBOL);
 					}
 					System.out.println();
 				}
@@ -62,7 +59,7 @@ public class Example2046 {
 				break;
 			}
 		}else{
-			System.out.println("종류는 1보다 크고 3보다 작아야한다.");
+			System.out.println("INPUT ERROR!");
 		}
 		
 	}

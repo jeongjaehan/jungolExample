@@ -1,11 +1,14 @@
-package jungol.exam;
+package jungol.exam.level2;
 
 import java.util.Scanner;
 
+import jungol.exam.Example;
+
 /**
+ * 사각형그리기1
  * @author Jeong
  * @since 2013.05.10
- * 사각형그리기1
+ * @see link http://www.jungol.co.kr/prog/Hanal/hanalView.php?qs_code=1856&qlevel=4&sk=&sv=&menu=&qc=41&sst=qs_code&sod=asc&page=1
  */
 public class Example1856 implements Example{
 	public static void main(String[] args) {
