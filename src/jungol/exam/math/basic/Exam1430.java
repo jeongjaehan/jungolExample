@@ -1,4 +1,4 @@
-package joungol.exam.mathbasic;
+package jungol.exam.math.basic;
 
 /**
  * 숫자의 개수
@@ -7,7 +7,7 @@ package joungol.exam.mathbasic;
  */
 public class Exam1430 {
 	public static void main(String[] args) {
-		int A = 150 ,B = 266, C = 427;
+		int A = 150, B = 266, C = 427;
 		
 		int SUM = A * B * C;
 		
